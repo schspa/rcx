@@ -87,7 +87,7 @@ def configureGo() {
     return Files.exists(localGo) ? localGo : 'go'
 }
 
-def repository = 'github.com/rclone/rclone'
+def repository = 'github.com/schspa/rclone'
 def repositoryRef = repository + '@' + buildTag
 def ldflags = "-X github.com/rclone/rclone/fs.Version=${buildTag}-rcx"
 def goPath = Paths.get(projectDir.absolutePath, 'gopath').toAbsolutePath().toString()
